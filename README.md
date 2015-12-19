@@ -20,7 +20,7 @@ Through this tutorial, you'll learn some basic skills in the terminal, vm, and s
 
 3. (Opt.) If your addresses include "@mit.edu"
 ----------------------------------------------
-The later command that we will use (`blanche`) doesn't accept email addresses with the "@mit.edu string. We want just the kerboros usernames, so we need to get rid of "@mit.edu" if your textfile includes them. 
+The later command that we will use (`blanche`) doesn't accept email addresses with the "@mit.edu" string. We want just the kerboros usernames, so we need to get rid of "@mit.edu" if your textfile includes them. 
 
 You can filter out this string from every line in your textfile by using the `sed` command. If you like the Excel or Google sheets interface better, I recommend just doing find/replace to remove the "@mit.edu". 
 
