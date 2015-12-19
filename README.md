@@ -8,10 +8,10 @@ Through this tutorial, you'll learn some basic skills in the terminal, vm, and s
 -------------------------------------------------------
 * You can search for the terminal in your Applications. When Terminal opens, connect to the MIT Athena servers (on which you can do all the fun mailing list changes) by typing:
 `ssh your_username@athena.dialup.mit.edu`
-* Type in the password associated with your kerboros as prompted.
+* Type in the password associated with your Kerberos as prompted.
 
 
-2. Create a textfile for the kerboros addresses.
+2. Create a textfile for the Kerberos addresses.
 ------------------------------------------------
 * Try typing `ls` to see the current directory, or folder that you are in. This will show other "directories" (which you often visualize as folders in the Finder app) and files. 
 * Create a textfile using vim (although you could use any text editor, but I've gotten used to vim), by typing `vi YourFileName.txt`. It doesn't matter what the name is really, because we'll get rid of this file later (unless you feel really attached to it).
@@ -20,7 +20,7 @@ Through this tutorial, you'll learn some basic skills in the terminal, vm, and s
 
 3. (Opt.) If your addresses include "@mit.edu"
 ----------------------------------------------
-The later command that we will use (`blanche`) doesn't accept email addresses with the "@mit.edu" string. We want just the kerboros usernames, so we need to get rid of "@mit.edu" if your textfile includes them. 
+The later command that we will use (`blanche`) doesn't accept email addresses with the "@mit.edu" string. We want just the Kerberos usernames, so we need to get rid of "@mit.edu" if your textfile includes them. 
 
 You can filter out this string from every line in your textfile by using the `sed` command. If you like the Excel or Google sheets interface better, I recommend just doing find/replace to remove the "@mit.edu". 
 
