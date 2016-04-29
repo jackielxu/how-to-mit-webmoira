@@ -1,7 +1,9 @@
-How To: Add people to an MIT Moira list
-=======================================
+How To: Add A LOT of people to an MIT Moira list in a little time.
+==================================================================
 
 Through this tutorial, you'll learn some basic skills in the terminal, vm, and ssh-ing into servers. This tutorial is catered people with access to the Terminal application. :)
+
+**Note**: You will need to be logged into an Athena-linked terminal in an Athena cluster computer or [online](https://athena.dialup.mit.edu/).
 
 
 1. Open Terminal and connect to MIT Athena Servers.
@@ -24,5 +26,18 @@ The later command that we will use (`blanche`) doesn't accept email addresses wi
 
 You can filter out this string from every line in your textfile by using the `sed` command. If you like the Excel or Google sheets interface better, I recommend just doing find/replace to remove the "@mit.edu". 
 
-If you've decided to try out `sed` (woo trying new things!), make sure you're in the directory with your textfile, and type `sed 's/@mit.edu//' YourFileName.txt` 
+If you've decided to try out `sed` (woo trying new things!), make sure you're in the directory with your textfile. 
+
+* Type `sed 's/@mit.edu//' YourFileName.txt > AnotherFileName.txt`. 
+	* `sed` arguments take the form `sed 's/find/replace/' filename`. But it doesn't actually apply the change to your file, it just shows what your file would look like if you did the find/replace.
+	* So, you need to put the output of the `sed` command into a new textfile name, using `>`. (No reading and writing to the same file, folks.) 
+
+* Delete your old file with `rm YourFileName.txt`. 
+
+4. Add the Kerberos usernames to your email list!
+-------------------------------------------------
+Now you're ready to add people to your email list! Using the textfile you created with all the email addresses you want to add (kerberoses only), use the following command.
+
+`blanche listname -al AnotherFileName.txt`
+
 
