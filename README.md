@@ -40,4 +40,4 @@ Now you're ready to add people to your email list! Using the textfile you create
 
 `blanche listname -al AnotherFileName.txt`
 
-
+There you go! Feel free to delete any files you created that you don't need anymore. 
